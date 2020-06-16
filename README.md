@@ -2,7 +2,7 @@
 Backend API for an application like AirBnb
 
 ## Usage
-Rename "config/config.env.env" to "config/config.env" and update the values/settings to your own
+Rename "config/config.env.env" to "config/config.env" and update the values/settings to your own - TODO - Add the config.env file after completion
 
 ## Install Dependencies
 ```sh
