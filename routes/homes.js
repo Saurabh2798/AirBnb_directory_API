@@ -9,10 +9,10 @@ const {
 
 const router = express.Router();
 
-const {protect} = require('../middleware/auth');
+const {protect, authorize} = require('../middleware/auth');
 
-router.route('/').get(getHomes).post(protect, createHome);
+router.route('/').get(getHomes).post(protect, authorize('publisher', 'admin'), createHome);
 
-router.route('/:id').get(getHome).put(protect, updateHome).delete(protect, deleteHome);
+router.route('/:id').get(getHome).put(protect, authorize('publisher', 'admin'), updateHome).delete(protect, authorize('publisher', 'admin'), deleteHome);
 
 module.exports = router;
