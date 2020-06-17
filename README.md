@@ -38,6 +38,6 @@ node seeder -i
 ## Demo
 The API is live at ----
 
-Extensive documentation with examples here
+Extensive documentation with examples here()[https://documenter.getpostman.com/view/10646104/SzzkbbvF?version=latest]
 
 Version: 1.0.0
