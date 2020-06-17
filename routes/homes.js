@@ -9,10 +9,16 @@ const {
 
 const Home = require('../models/Home');
 
+// include other resource routers
+const reviewRouter = require('./reviews');
+
 const router = express.Router();
 
 const {protect, authorize} = require('../middleware/auth');
 const advancedResults = require('../middleware/advancedResults');
+
+// re-route into other resource routers
+router.use('/:homeId/reviews', reviewRouter);
 
 router.route('/').get(advancedResults(Home), getHomes).post(protect, authorize('publisher', 'admin'), createHome);
 

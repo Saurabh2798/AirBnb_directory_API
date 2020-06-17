@@ -1,5 +1,6 @@
 [
   {
+    "_id": "5d713995b721c3bb38c1f5d0",
     "name": "Clean & quiet apt home by the park",
     "neighbourhood": "Kensington",
     "room_type": "Private room",
@@ -7,6 +8,7 @@
     "days_available": "365"
   },
   {
+    "_id": "5d713a66ec8f2b88b8f830b8",
     "name": "Skylit Midtown Castle",
     "neighbourhood": "Midtown",
     "room_type": "Entire home/apt",
@@ -14,6 +16,7 @@
     "days_available": "355"
   },
   {
+    "_id": "5d725a037b292f5f8ceff787",
     "name": "THE VILLAGE OF HARLEM....NEW YORK !",
     "neighbourhood": "Harlem",
     "room_type": "Private room",
@@ -21,17 +24,11 @@
     "days_available": "365"
   },
   {
+    "_id": "5d725a1b7b292f5f8ceff788",
     "name": "Cozy Entire Floor of Brownstone",
     "neighbourhood": "Clinton Hill",
     "room_type": "Entire home/apt",
     "price": "89",
     "days_available": "194"
-  },
-  {
-    "name": "Entire Apt: Spacious Studio/Loft by central park",
-    "neighbourhood": "East Harlem",
-    "room_type": "Entire home/apt",
-    "price": "80",
-    "days_available": "0"
   }
 ]

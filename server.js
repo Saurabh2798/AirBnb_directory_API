@@ -16,6 +16,7 @@ connectDB();
 const homes = require('./routes/homes');
 const auth = require('./routes/auth');
 const users = require('./routes/users');
+const reviews = require('./routes/reviews');
 
 const app = express();
 
@@ -34,6 +35,7 @@ if (process.env.NODE_ENV === 'development') {
 app.use('/api/v1/homes', homes);
 app.use('/api/v1/auth', auth);
 app.use('/api/v1/users', users);
+app.use('/api/v1/reviews', reviews);
 
 app.use(errorHandler);
 
