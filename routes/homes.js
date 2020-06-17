@@ -7,11 +7,14 @@ const {
   deleteHome,
 } = require('../controllers/homes');
 
+const Home = require('../models/Home');
+
 const router = express.Router();
 
 const {protect, authorize} = require('../middleware/auth');
+const advancedResults = require('../middleware/advancedResults');
 
-router.route('/').get(getHomes).post(protect, authorize('publisher', 'admin'), createHome);
+router.route('/').get(advancedResults(Home), getHomes).post(protect, authorize('publisher', 'admin'), createHome);
 
 router.route('/:id').get(getHome).put(protect, authorize('publisher', 'admin'), updateHome).delete(protect, authorize('publisher', 'admin'), deleteHome);
 
